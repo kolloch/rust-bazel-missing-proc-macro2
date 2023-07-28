@@ -1,5 +1,5 @@
 {
-  "checksum": "7ceb5e8f8edfbecf5a1f0ea1fa1ca1de9d79ee41562b66d681bd9e50c4d7bc7f",
+  "checksum": "8c37dd815a88622bc92b6530af41e5eef0038184e97629d9544933aa176c4d68",
   "crates": {
     "cli 0.1.0": {
       "name": "cli",
@@ -18,11 +18,11 @@
               "target": "schemars"
             },
             {
-              "id": "serde 1.0.177",
+              "id": "serde 1.0.164",
               "target": "serde"
             },
             {
-              "id": "serde_json 1.0.104",
+              "id": "serde_json 1.0.99",
               "target": "serde_json"
             }
           ],
@@ -286,11 +286,11 @@
               "target": "build_script_build"
             },
             {
-              "id": "serde 1.0.177",
+              "id": "serde 1.0.164",
               "target": "serde"
             },
             {
-              "id": "serde_json 1.0.104",
+              "id": "serde_json 1.0.99",
               "target": "serde_json"
             }
           ],
@@ -366,13 +366,13 @@
       },
       "license": "MIT"
     },
-    "serde 1.0.177": {
+    "serde 1.0.164": {
       "name": "serde",
-      "version": "1.0.177",
+      "version": "1.0.164",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/serde/1.0.177/download",
-          "sha256": "63ba2516aa6bf82e0b19ca8b50019d52df58455d3cf9bdaf6315225fdd0c560a"
+          "url": "https://crates.io/api/v1/crates/serde/1.0.164/download",
+          "sha256": "9e8c8cf938e98f769bc164923b06dce91cea1751522f46f8466461af04c9027d"
         }
       },
       "targets": [
@@ -412,7 +412,7 @@
         "deps": {
           "common": [
             {
-              "id": "serde 1.0.177",
+              "id": "serde 1.0.164",
               "target": "build_script_build"
             }
           ],
@@ -422,13 +422,13 @@
         "proc_macro_deps": {
           "common": [
             {
-              "id": "serde_derive 1.0.177",
+              "id": "serde_derive 1.0.164",
               "target": "serde_derive"
             }
           ],
           "selects": {}
         },
-        "version": "1.0.177"
+        "version": "1.0.164"
       },
       "build_script_attrs": {
         "data_glob": [
@@ -437,13 +437,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "serde_derive 1.0.177": {
+    "serde_derive 1.0.164": {
       "name": "serde_derive",
-      "version": "1.0.177",
+      "version": "1.0.164",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/serde_derive/1.0.177/download",
-          "sha256": "401797fe7833d72109fedec6bfcbe67c0eed9b99772f26eb8afd261f0abc6fd3"
+          "url": "https://crates.io/api/v1/crates/serde_derive/1.0.164/download",
+          "sha256": "d9735b638ccc51c28bf6914d90a2e9725b377144fc612c49a611fddd1b631d68"
         }
       },
       "targets": [
@@ -469,26 +469,24 @@
           "selects": {}
         },
         "deps": {
-          "common": [],
-          "selects": {
-            "cfg(not(all(target_arch = \"x86_64\", target_os = \"linux\", target_env = \"gnu\")))": [
-              {
-                "id": "proc-macro2 1.0.66",
-                "target": "proc_macro2"
-              },
-              {
-                "id": "quote 1.0.32",
-                "target": "quote"
-              },
-              {
-                "id": "syn 2.0.27",
-                "target": "syn"
-              }
-            ]
-          }
+          "common": [
+            {
+              "id": "proc-macro2 1.0.66",
+              "target": "proc_macro2"
+            },
+            {
+              "id": "quote 1.0.32",
+              "target": "quote"
+            },
+            {
+              "id": "syn 2.0.27",
+              "target": "syn"
+            }
+          ],
+          "selects": {}
         },
         "edition": "2015",
-        "version": "1.0.177"
+        "version": "1.0.164"
       },
       "license": "MIT OR Apache-2.0"
     },
@@ -539,13 +537,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "serde_json 1.0.104": {
+    "serde_json 1.0.99": {
       "name": "serde_json",
-      "version": "1.0.104",
+      "version": "1.0.99",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/serde_json/1.0.104/download",
-          "sha256": "076066c5f1078eac5b722a31827a8832fe108bed65dfa75e233c89f8206e976c"
+          "url": "https://crates.io/api/v1/crates/serde_json/1.0.99/download",
+          "sha256": "46266871c240a00b8f503b877622fe33430b3c7d963bdc0f2adc511e54a1eae3"
         }
       },
       "targets": [
@@ -591,18 +589,18 @@
               "target": "ryu"
             },
             {
-              "id": "serde 1.0.177",
+              "id": "serde 1.0.164",
               "target": "serde"
             },
             {
-              "id": "serde_json 1.0.104",
+              "id": "serde_json 1.0.99",
               "target": "build_script_build"
             }
           ],
           "selects": {}
         },
-        "edition": "2021",
-        "version": "1.0.104"
+        "edition": "2018",
+        "version": "1.0.99"
       },
       "build_script_attrs": {
         "data_glob": [
@@ -714,6 +712,18 @@
         "compile_data_glob": [
           "**"
         ],
+        "crate_features": {
+          "common": [
+            "clone-impls",
+            "default",
+            "derive",
+            "parsing",
+            "printing",
+            "proc-macro",
+            "quote"
+          ],
+          "selects": {}
+        },
         "deps": {
           "common": [
             {
@@ -771,38 +781,5 @@
   "workspace_members": {
     "cli 0.1.0": "cli"
   },
-  "conditions": {
-    "cfg(not(all(target_arch = \"x86_64\", target_os = \"linux\", target_env = \"gnu\")))": [
-      "aarch64-apple-darwin",
-      "aarch64-apple-ios",
-      "aarch64-apple-ios-sim",
-      "aarch64-fuchsia",
-      "aarch64-linux-android",
-      "aarch64-pc-windows-msvc",
-      "aarch64-unknown-linux-gnu",
-      "arm-unknown-linux-gnueabi",
-      "armv7-linux-androideabi",
-      "armv7-unknown-linux-gnueabi",
-      "i686-apple-darwin",
-      "i686-linux-android",
-      "i686-pc-windows-msvc",
-      "i686-unknown-freebsd",
-      "i686-unknown-linux-gnu",
-      "powerpc-unknown-linux-gnu",
-      "riscv32imc-unknown-none-elf",
-      "riscv64gc-unknown-none-elf",
-      "s390x-unknown-linux-gnu",
-      "thumbv7em-none-eabi",
-      "thumbv8m.main-none-eabi",
-      "wasm32-unknown-unknown",
-      "wasm32-wasi",
-      "x86_64-apple-darwin",
-      "x86_64-apple-ios",
-      "x86_64-fuchsia",
-      "x86_64-linux-android",
-      "x86_64-pc-windows-msvc",
-      "x86_64-unknown-freebsd",
-      "x86_64-unknown-none"
-    ]
-  }
+  "conditions": {}
 }
